@@ -1,0 +1,36 @@
+MedicalSchema:
+  patient_id:
+    type: str
+    description: "Unique identifier for the patient"
+  diagnosis:
+    type: str
+    description: "Medical diagnosis assigned to the patient"
+  medication:
+    type: str
+    description: "Name of the medication prescribed to the patient"
+  dosage:
+    type: float
+    description: "Dosage of the prescribed medication"
+  dosage_unit:
+    type: str
+    description: "Unit of the dosage, e.g., mg, ml"
+  symptoms:
+    type: List[str]
+    description: "List of symptoms reported by the patient"
+  lab_results:
+    type: dict
+    description: "Dictionary containing lab test results"
+    properties:
+      test_name:
+        type: str
+        description: "Name of the lab test"
+      result_value:
+        type: float
+        description: "Result of the lab test"
+      unit:
+        type: Optional[str]
+        description: "Unit of the lab test result, e.g., mg/dL"
+  notes:
+    type: Optional[str]
+    description: "Additional notes or observations by the healthcare provider"
+

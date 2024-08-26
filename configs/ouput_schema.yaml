@@ -10,7 +10,6 @@ FoodSchema:
     description: "Process of the ingredient eg., chopped, sliced, etc."
 
 
-#give me a sample for the schema in json format
 
 
 

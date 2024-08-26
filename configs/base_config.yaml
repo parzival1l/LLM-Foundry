@@ -1,0 +1,9 @@
+openai_hyperparameters :
+  temperature: 0.05
+  max_tokens: 1500
+  top_p: 0.05
+  frequency_penalty: 0.2
+  presence_penalty: 1.0
+
+prompt_template: "You are a structured information extraction agent. Based on the text: {document_segment}, extract and output the information in a JSON format."
+
